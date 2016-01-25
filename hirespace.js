@@ -24,7 +24,9 @@ if (Meteor.isClient) {
 
             if(length < 42) {                         //Add Branding if there's room
               title += ' - Hire Space';
-            } else if(length < 58) {                  //Change wording to shave off some characters
+            } else if(length < 55) {
+              //Keep ideal title without branding
+            }else if(length < 58) {                  //Change wording to shave off some characters
               title = usageName + ' at ' + spaceName + ', ' + venueName;
             } else if(length < 62){                   //Remove all wording
               title = usageName + ' ' + spaceName + ' ' + venueName;
